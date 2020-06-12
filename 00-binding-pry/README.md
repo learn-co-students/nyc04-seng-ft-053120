@@ -66,11 +66,18 @@ join_string("hello", "world")
 Now when we run this code, we'll hit the `binding.pry` before the line that threw an error, and we can test out that offending line in the console to debug it, and try other solutions before updating our code:
 
 ```
-[1] pry(main)> str1.join(str2)                              // this is the line that broke, let's try to recreate the error
-  NoMethodError: undefined method `join' for "hello":String  // same error we saw before! so join doesn't work
-  from (pry):1:in `join_string'
-[2] pry(main)> str1 + " " + str2                            // now we can try something new
-=> "hello world"                                            // it works!
+# this is the line that broke, let's try to recreate the error
+[1] pry(main)> str1.join(str2)        
+
+# same error we saw before! so join doesn't work 
+  NoMethodError: undefined method 'join' for "hello":String
+  from (pry):1:in 'join_string'
+
+# now we can try something new
+[2] pry(main)> str1 + " " + str2
+
+# it works!                  
+=> "hello world"                                           
 ```
 
 ### Scenario 2: Checking variables/parameters
