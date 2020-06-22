@@ -300,7 +300,7 @@ ___
 
 ![alt text](pics/britwriting.jpg "Britney reading & writing")
 
-## Attribute Readers
+## Attribute Macros
 
 In the examples where we created our class `Performer` we see a keyword called `attr_accessor`. This keyword gives certain meaning to how we can interact with attributes. We also have two other keywords that we can use instead called `attr_reader` and `attr_writer` that also give different meaning to how we can interact with our attributes.
 
