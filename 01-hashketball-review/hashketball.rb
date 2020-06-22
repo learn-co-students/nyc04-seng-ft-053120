@@ -129,6 +129,38 @@ end
 
 
 
+# gets all the players hashes from the game_hash and stores them in an array
+def get_players
+  players_array = game_hash.map do |team, team_data|
+    team_data[:players]
+  end.flatten
+end
 
+# finds one specific player from the array of players hashes
+def find_player(player_name)
+  get_players.find do |player_hash|
+    player_hash[:player_name] == player_name
+  end
+end
+
+def num_points_scored (player_name)
+  # call game hash
+  # iterate over game hash
+  # find the player through the given name
+  # return the score/points of the player
+  find_player(player_name)[:points]
+end
+
+def shoe_size(player_name)
+  player_hash = find_player(player_name)
+  player_hash[:shoe]
+
+  # could also consolidate both lines above to:
+  # find_player(player_name)[:shoe]
+end
+
+
+
+num_points_scored("Alan Anderson")
 
 
