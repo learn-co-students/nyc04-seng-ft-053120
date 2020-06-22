@@ -14,7 +14,7 @@
 - Lecture Code
     - All the code we write together and readme's you see will be available to you after lecture
     - Clone the class repo
-        - `git clone https://github.com/learn-co-students/nyc04-seng-ft-041920`
+        - `git clone https://github.com/learn-co-students/nyc04-seng-ft-053120`
 - Breaks
     - Mod 1 lectures typically last no longer than 1.5 hours
     - 5 min break half way through
