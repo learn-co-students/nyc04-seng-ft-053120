@@ -99,7 +99,7 @@ We created this `Performer` object called `britney` and we gave it various attri
 - Create another instance of `Performer` called `justin`
 
 
-![alt text](pics/performers.jpg "performer instances")
+![alt text](pics/performers-collage.jpg "performer instances")
 ___
 
 ## Methods
@@ -125,9 +125,11 @@ class Performer
     end
 end
 
-britney = Performer.new("Britney", "Spears", 16, 9, true, 1981)
-justin = Performer.new("Justin", "Timberlake", 7, 22, true, 1981)
-christina = Performer.new("Christina", "Aguilera"), 10, 7, true, 1980)
+britney = Performer.new("Britney", "Spears", 16, 192, true, 1981)
+whitney = Performer.new("Whitney", "Houston", 16, 106, false, 1963)
+justin = Performer.new("Justin", "Timberlake", 9, 176, true, 1981)
+shakira = Performer.new("Shakira", "Mebarak Ripoll", 21, 264, true, 1977)
+rhianna = Performer.new("Robyn Rihanna", "Fenty"), 13, 234, true, 1988)
 ```
 
 Inside of our class definition above, you can see we defined a method called `initialize` just as we would define any other method. The parameters of the method are all of the attributes within the class except for `age`. I chose not to make `age` a parameter because knowing the performer's `birth_year`, we can calculate the performer's age using a Ruby's `Time.now.year` to get the current year.
@@ -259,21 +261,21 @@ end
 
 britney = Performer.new("Britney")
 justin = Performer.new("Justine")
-mariah = Performer.new("Mariah")
+whitney = Performer.new("whitney")
 
 puts "#{britney.first_name}, #{britney.genre} "
 puts "#{justin.first_name}, #{justin.genre} "
-puts "#{mariah.first_name}, #{mariah.genre} "
+puts "#{whitney.first_name}, #{whitney.genre} "
 
 britney.genre = "rap"
 puts "#{britney.first_name}, #{britney.genre} "
 puts "#{justin.first_name}, #{justin.genre} "
-puts "#{mariah.first_name}, #{mariah.genre} "
+puts "#{whitney.first_name}, #{whitney.genre} "
 
 justin.genre = "classical"
 puts "#{britney.first_name}, #{britney.genre} "
 puts "#{justin.first_name}, #{justin.genre} "
-puts "#{mariah.first_name}, #{mariah.genre} "
+puts "#{whitney.first_name}, #{whitney.genre} "
 ```
 <p>
 <details>
@@ -282,13 +284,13 @@ puts "#{mariah.first_name}, #{mariah.genre} "
 <pre><code>
 Britney, pop 
 Justine, pop 
-Mariah, pop 
+whitney, pop 
 Britney, rap 
 Justine, rap 
-Mariah, rap 
+whitney, rap 
 Britney, classical 
 Justine, classical 
-Mariah, classical 
+whitney, classical 
 </code></pre>
 
 </details>
