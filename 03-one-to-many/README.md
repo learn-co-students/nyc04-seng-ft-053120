@@ -188,3 +188,9 @@ ___
 - [Practical Linked List in Ruby](https://www.rubyguides.com/2017/08/ruby-linked-list/)
 - [@/@@ vs. self in Ruby](https://medium.com/@sgg2123/vs-self-in-ruby-1d4d88170)
 - [Coffee Dad 🤷‍♀️](https://twitter.com/coffee_dad?lang=en)
+
+
+____
+
+
+<img src="pics/animals.jpg" alt="cute animals!">
