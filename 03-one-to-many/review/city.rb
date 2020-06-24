@@ -1,6 +1,8 @@
 class City
-    attr_reader :age, :name
-    attr_accessor :weather, :population
+    attr_reader :name
+    attr_accessor :weather, :population, :age
+
+    # binding.pry
 
     def initialize(name, population, weather, year_founded)
         @name = name
@@ -13,15 +15,13 @@ class City
         puts "#{@name} has #{@weather} weather and #{city.name} has #{city.weather} weather"
     end
 
-    def find_age_difference(city)
-        age_difference = @age - city.age
+    def increase_population(number_of_citizens)
         binding.pry
+        @population += number_of_citizens
+    end
 
-        if age_difference > 0
-            puts "#{@name} was founded #{age_difference} year/s before #{city.name}"
-            binding.pry
-        else
-            puts "#{city.name} was founded #{age_difference.abs} year/s before #{@name}"
-        end
+    def self.output_a_greeting 
+        binding.pry
+        puts "hello"
     end
 end
