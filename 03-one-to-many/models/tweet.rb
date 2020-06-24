@@ -1,5 +1,3 @@
-# Tweet.all returns all the Tweets created
-# Tweet#username returns the username of the Tweet's user
 class Tweet
 
     attr_reader :message, :user
@@ -11,8 +9,11 @@ class Tweet
         @@all << self
     end
 
+    def username
+        self.user.username
+    end
+
     def self.all
-
-
+        @@all
     end
 end
