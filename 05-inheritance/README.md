@@ -7,17 +7,8 @@
 - [ ] Review the lookup chain.
 - [ ] Investigate `self` in the child and parent classes.
 - [ ] Understand how to read test errors
-- [ ] *Bonus* Use `module`s to add additional behavior to classes
 
-## Notes
-- create a master class to make functionality for other classes 
-  (Car < Vehicle)
-- DRY - Don't Repeat Yourself
-
-## Key Concepts
-
-- TDD: `--fail-fast`; Shameless Green; Red-Green-Refactor
-- DRY
+<img src="pics/oo.png">
 
 ## Review Questions
 
