@@ -1,10 +1,10 @@
 # Inheritance
 
-## Learning Goals
+## SWABTs
 
-- [ ] Review how to inherit from a parent class.
-- [ ] Review what `super` is doing.
-- [ ] Review the lookup chain.
+- [ ] Demonstrate how to inherit from a parent class.
+- [ ] Demonstrate what `super` is doing.
+- [ ] Understand the lookup chain.
 - [ ] Investigate `self` in the child and parent classes.
 - [ ] Understand how to read test errors
 
