@@ -28,11 +28,11 @@ _____
 <p>
 <details>
 <summary> Why is persistance important? How have we been persisting data so far?</summary>
-<pre><code>
+<pre>
 So far in our apps, we've been using variables and data structures to persist information. For example, we've been using <code>@@all << self</code> in order to store all of our instances of a class.
 
 There are a few issues that arise with how we've been persisting data. The main issue is that our data is only persisted for the runtime of our application. Once we exit our application, we lose all the data we had forever, so it's not persisted in the long run.
-</code></pre>
+</pre>
 </details>
 </p>
 <p>
@@ -55,30 +55,28 @@ A relational database is a common type of database whose data is stored in table
 <p>
 <details>
 <summary>What is SQL?</summary>
-<pre><code>
+<pre>
 Structured Query Language
 
 SQL is a declarative programming language. It reads like you're telling the computer to do something in English.
-</code></pre>
+</pre>
 </details>
 </p>
 <p>
 <details>
 <summary>What is CRUD?</summary>
-<pre><code>
+<pre>
 <li>Create</li>
 <li>Read</li>
 <li>Update</li>
 <li>Delete</li>
 
-You can break almost any web applications into these four different actions.
-
-Related to databases, we can create rows from the a table in the database, read data from the database, update data, or delete rows, etc.
-</code></pre>
+You can break almost any web applications into these four different actions. Regarding databases, we can create rows from the a table in the database, read data from the database, update data, or delete rows, etc.
+</pre>
 </details>
 </p>
 
-
+<br>
 * How does an app like Instagram use CRUD?
 
 C ->
@@ -146,12 +144,12 @@ ________
 <summary>What is an ORM?</summary>
 <pre>
 Object Relational Mapper
-
+<br>
 <li>Object -> instance of a class, the data/behavior of a ruby object</li>
 <li>Relational -> relational databases, how classes interact</li>
 <li>Mapper -> takes data and turns it into a new format</li>
 
-We are going to take information from our relational database and map it to a Ruby Object, so an ORM is like the layer that will connect SQL intro Ruby.
+We are going to take information from our relational database and map it to a Ruby Object, so an ORM is like the layer that will connect SQL into Ruby.
 </pre>
 </details>
 </p>
