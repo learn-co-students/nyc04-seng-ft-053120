@@ -71,7 +71,9 @@ SQL is a declarative programming language. It reads like you're telling the comp
 <li>Update</li>
 <li>Delete</li>
 
-You can break almost any web applications into these four different actions. Regarding databases, we can create rows from the a table in the database, read data from the database, update data, or delete rows, etc.
+You can break almost any web applications into these four different actions. 
+
+Regarding databases, we can create rows from the a table in the database, read data from the database, update data, or delete rows, etc.
 </pre>
 </details>
 </p>
