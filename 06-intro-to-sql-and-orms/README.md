@@ -81,13 +81,13 @@ Regarding databases, we can create rows from the a table in the database, read d
 <br>
 * How does an app like Instagram use CRUD?
 
-C ->
+C -> create content, post images, post comments, sign up for the app
 
-R ->
+R -> comments on photos, number of likes, bio, photos
 
-U ->
+U -> update our profile photo/username, update captions, update settings, update password
 
-D ->
+D -> delete photos, account, comments
 
 
 
@@ -109,20 +109,55 @@ ___
 
 1. Write the SQL to return all of the rows in the games table
 
+```sql
+SELECT games.title
+FROM games;
+```
+
 
 2. Write the SQL to select the game with the title "Mario Kart 64"
+
+```sql
+SELECT games.title
+FROM games
+WHERE games.title like 'mario Kart 64';
+```
 
 
 3. Change the query above to include all games with the word 'Mario' in their title
 
+```sql
+SELECT games.title
+FROM games
+WHERE games.title like '%mario%';
+```
+
 
 4. Write the SQL to display the games' titles next to their rating
+
+```sql
+SELECT games.title, reviews.rating
+FROM games
+JOIN reviews ON games.id = reviews.game_id;
+```
 
 
 5. Write the SQL to show the game title, the review rating, and the player's name
 
+```sql
+SELECT games.title, reviews.rating, players.name
+FROM games
+JOIN reviews ON games.id = reviews.game_id
+JOIN players ON players.id = reviews.player_id;
+```
+
 
 6. Write the SQL to create a review
+
+```sql
+INSERT INTO reviews(game_id, player_id, rating, comment)
+VALUES (15, 18, 4, "Could be better......")
+```
 
 
 
