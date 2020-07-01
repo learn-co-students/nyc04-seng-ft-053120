@@ -7,6 +7,12 @@
 4. Practice with ActiveRecord::Base instance and class methods
 5. Perform persistent CRUD actions on one model using ActiveRecord
 
+
+boss
+employee
+
+
+
  
 ## Rake
 

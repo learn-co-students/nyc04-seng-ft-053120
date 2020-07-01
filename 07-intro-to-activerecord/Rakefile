@@ -8,3 +8,8 @@ task :console do
   # open Pry console, similar to binding.pry
   Pry.start
 end
+
+desc "Print pet emojis"
+task :print_pets do
+  puts "🦜🐶😸" * 10000
+end
