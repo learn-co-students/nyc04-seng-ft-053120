@@ -25,6 +25,19 @@
 
 
 ----
+## Tips for Git Flow When Working in a Group:
+
+One partner should create the repository on GitHub. From there, everybody in the team can clone the project. Once you have the repository on your local machine, make a branch to work on a feature or bugfix. Nobody should be developing code directly on master because master should always have working, tested code! Once you write your code, make sure you test, test, test! Switch to the main or `master` branch and make sure you synch your local main/`master` branch with the main/`master` branch on GitHub by performing a `git pull` or a `git fetch` & `git merge origin/master`. 
+
+Then, switch back to your feature branch. You want to check if the master branch has any changes that your feature branch doesn't have. In order to do so, you can compare commits with `git log master ^feature-branch-name`. This command will tell you which commits if any exist on main/master that you don't have on your feature branch. If there are any or if you're unsure, perform `git merge master` and solve merge conflicts if any. Now your feature branch is going to look like what it will look like if you merge it into master. Note, if changes are made to master before you merge your feature branch into master, you should repeat the steps to merge the new changes on master into your feature branch first.
+
+Then, you want to push your feature branch up to GitHub using `git push` and if you're ready to merge your branch into master, create a **pull request**. If you need assitance figuring out how to do a pull request, please message me and I will show you. Once a pull request is made, your team member/s can look at the code and the branch that you're trying to merge into master and approve it if they think it's ready to be merged, too. Once it's merged, you want to update your master branch on your local machine, so you can open your terminal, switch to the master branch, and `git pull` or `git fetch` & `git merge origin/master`
+
+In general, I would get into the habit of synching my local master branch with the remote's master branch, especially if you've been away from the code for awhile. 
+
+If you get stuck or are unsure about a step during the process, ask away! 🙂
+
+___
 
 ## What Is Version Control?
 
