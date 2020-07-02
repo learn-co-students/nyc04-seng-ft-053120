@@ -44,3 +44,4 @@ player
 
 ##### Extra Resources
 - [ActiveRecord Associations Documentation](https://guides.rubyonrails.org/association_basics.html)
+- [Faker Gem](https://github.com/faker-ruby/faker)
