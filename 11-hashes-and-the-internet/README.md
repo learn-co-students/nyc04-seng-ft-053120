@@ -10,7 +10,6 @@
     - Identify HTML as a response type
     - Identify and define JSON
 2. Define Application Programming Interface (API)
-    - Describe the API of a Ruby Array
     - Explain the uses of an API on the internet
 3. Practice making requests to an API and parsing and examining the result
 
