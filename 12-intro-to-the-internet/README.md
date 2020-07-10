@@ -10,7 +10,7 @@
 4. Utilize Postman to make basic GET requests
 5. Utilize the browser to make a request and see a response
 6. Define tools like JSON and APIs
-7. Make a basic web app in 30 seconds???!!!
+7. <del>Make a basic web app in 30 seconds???!!!</del>
 
 ______
 
