@@ -12,9 +12,40 @@
 6. Define tools like JSON and APIs
 7. Make a basic web app in 30 seconds???!!!
 
+______
 
+## History of the Internet
 
-#### How is data sent over the internet?
+It's commonly cited that the internet was started being developed by the military through DARPA (Department of Defense Advanced Research Projects Agency) and was first connected in October 1969. It was later expanded through the development of TCP/IP by Vint Cerf and Bob Kahn.
+
+The internet is a network of computers all connected by cables. Most often, it's a network of smaller networks together - think home networks, school networks, business networks, and government networks.
+
+<img src="pics/cable.gif" alt="cable" width="400"/>
+
+These networks are connected through literal cables, and the reason that we can get information from one continent to another is through [underwater fiber optic cables](https://www.submarinecablemap.com/). These cables are thick (for a cable) and branch off at different points until they eventually reach your wall where you likely have a wifi router installed.
+
+Fun fact, [sharks have been known to bite the cables](https://www.youtube.com/watch?v=VVJlKJi9FWU)...
+
+<img src="pics/shark-cable.jpg" alt="drawing" width="400"/>
+
+The World Wide Web (IS THAT WHAT THE WWW STANDS FOR IN A WEB ADDRESS?? OMG!!!) is a service that exists on top of the internet and is commonly how most people consume and distribute information on the internet. The web was created in 1989 by Sir Tim Berners-Lee and his colleagues at CERN (European Organization for Nuclear Research).
+
+You can think of the internet as an infrastructure and the World Wide Web as a service on top of that infrastructure. The web contains websites and webpages which are connected through hypertext links which are composed of a URI (uniform resources identifier) and some text. Websites on the internet are written in HTML and are accessible in browsers which communicate using HTTP (Hypertext Transfer Protocol) or HTTPS (Hypertext Transfer Protocol Secured) and can render HTML (Hypertext Markup Language).
+
+Sir Tim Berners-Lee and his colleagues created the World Wide Web as a social invention in order to connect people in the world. He said that he didn't ask for permission when he created it, he just did it. That's a directive for you to also be creative and to find a need for your own inventions!
+
+______
+
+## How is data sent over the internet?
+<details>
+<summary>
+   <a href="https://www.youtube.com/watch?v=pvS3j8VtanM">Packet</a>
+</summary>
+<pre>
+A packet is a fixed size unit of data. Normally, when you exchange data between two computers, the data that you're sending is too large to send inside a single packet. Therefore, the data is broken up into a bunch of packets and each packet is independently transmitted to the reciever who pieces the packets back together.
+</pre>
+</details>
+
 <details>
 <summary>TCP</summary>
 <pre>
@@ -81,26 +112,7 @@ HyperText Markup Language
 </pre>
 </details>
 
-
-## History of the Internet
-
-It's commonly cited that the internet was started being developed by the military through DARPA (Department of Defense Advanced Research Projects Agency) and was first connected in October 1969. It was later expanded through the development of TCP/IP by Vint Cerf and Bob Kahn.
-
-The internet is a network of computers all connected by cables. Most often, it's a network of smaller networks together - think home networks, school networks, business networks, and government networks.
-
-<img src="pics/cable.gif" alt="cable" width="400"/>
-
-These networks are connected through literal cables, and the reason that we can get information from one continent to another is through [underwater fiber optic cables](https://www.submarinecablemap.com/). These cables are thick (for a cable) and branch off at different points until they eventually reach your wall where you likely have a wifi router installed.
-
-Fun fact, [sharks have been known to bite the cables](https://www.youtube.com/watch?v=VVJlKJi9FWU)...
-
-<img src="pics/shark-cable.jpg" alt="drawing" width="400"/>
-
-The World Wide Web (IS THAT WHAT THE WWW STANDS FOR IN A WEB ADDRESS?? OMG!!!) is a service that exists on top of the internet and is commonly how most people consume and distribute information on the internet. The web was created in 1989 by Sir Tim Berners-Lee and his colleagues at CERN (European Organization for Nuclear Research).
-
-You can think of the internet as an infrastructure and the World Wide Web as a service on top of that infrastructure. The web contains websites and webpages which are connected through hypertext links which are composed of a URI (uniform resources identifier) and some text. Websites on the internet are written in HTML and are accessible in browsers which communicate using HTTP (Hypertext Transfer Protocol) or HTTPS (Hypertext Transfer Protocol Secured) and can render HTML (Hypertext Markup Language).
-
-Sir Tim Berners-Lee and his colleagues created the World Wide Web as a social invention in order to connect people in the world. He said that he didn't ask for permission when he created it, he just did it. That's a directive for you to also be creative and to find a need for your own inventions!
+______
 
 
 ## How the Web Works
@@ -109,6 +121,7 @@ HTTP (Hypertext Transfer Protocol) is the language of the web and it describes h
 
 The server that we make this request to is always located using a URL or URI which is composed of a few parts. Consider this URI: https://go.flatironschool.com/getting_started. The first part is the protocol http:// or https:// at the beginning of the URI, which describes the language that we're using to communicate with this website. The next is the domain which can either be an IP address or a string like go.flatironschool.com. When the domain is formatted as a string, we can divide each part of the string into separate parts: `com` is the top-level domain, `flatironschool` is the second-level domain, and we can continue with subdomains like `go` in the example above. Following the domain is a port address which is formatted like go.flatironschool.com:80, but these ports are implicit when accessing servers over either HTTP or HTTPS. And lastly is the resource that you want from this domain. In our example, it's the `/getting_started` resource.
 
+_____
 
 ## What Happens When I Press Enter or Click a Link?
 
@@ -120,7 +133,7 @@ When the browser receives the response, it has some information about the respon
 
 In a very specific order, the browser loads all the assets it needs and begins to render the page. The HTML defines the structure as well as most of the external assets needed. The CSS defines how the page should look. The JavaScript defines how the page will behave once loaded and how the user can interact with it.
 
-
+_____
 
 ## Requests and Responses
 
@@ -177,7 +190,7 @@ Content-Type: text/html; charset=iso-8859-1
 
 ![HTTP Response](pics/HTTP_Response.png)
 
-
+_____
 
 ## [Postman](https://www.postman.com/)
 
@@ -187,6 +200,7 @@ Postman is a client that lets you make all type of requests in a fairly easy to 
 
 In the picture above, we make a request using Postman to `google.com`. Using the raw tab, you will be able to see how the response is simply a bunch of text. Using the pretty tab, you can see that it's HTML. You can see a preview of the html page returned from the request using the preview tab.
 
+_____
 
 ## Anatomy of a URL
 
@@ -195,6 +209,7 @@ There's a ton of information we can get simply from looking at the URL! The pict
 
 ![HTTP Response](pics/complex-url.png)
 
+____
 
 #### Other Tools:
 - ping
@@ -202,6 +217,8 @@ There's a ton of information we can get simply from looking at the URL! The pict
 - location - https://en.geoipview.com/
 - nslookup
 - whois
+
+____
 
 #### Review Questions
 
@@ -233,6 +250,7 @@ A language agnostic data format. It's a type of string that we can get back from
 </details>
 </p>
 
+______
 
 #### Extra Resources
 
