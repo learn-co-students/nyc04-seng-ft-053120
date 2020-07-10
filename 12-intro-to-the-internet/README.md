@@ -42,7 +42,11 @@ ______
    <a href="https://www.youtube.com/watch?v=pvS3j8VtanM">Packet</a>
 </summary>
 <pre>
-A packet is a fixed size unit of data. Normally, when you exchange data between two computers, the data that you're sending is too large to send inside a single packet. Therefore, the data is broken up into a bunch of packets and each packet is independently transmitted to the reciever who pieces the packets back together.
+A packet is a fixed size unit of data. 
+
+Normally, when you exchange data between two computers, the data that you're sending is too large to send inside a single packet. 
+
+Therefore, the data is broken up into a bunch of packets and each packet is independently transmitted to the reciever who pieces the packets back together.
 </pre>
 </details>
 
@@ -87,7 +91,9 @@ A Network Interface Card is an interface hardware that is used by your computer 
 <summary>Difference between MAC address & IP address</summary>
 <pre>
 <li>IP identifies your network whereas MAC address identifies your unique machine.</li> 
-<li>You can think of the MAC address as your name (assuming it is unique in the world) and the IP address as your residential address. You can have different addresses at different times but your name would always be the same.</li>
+<li>You can think of the MAC address as your name (assuming it is unique in the world) and the IP address as your residential address. 
+
+You can have different addresses at different times but your name would always be the same.</li>
 </pre>
 </details>
 </details>
@@ -123,7 +129,7 @@ The server that we make this request to is always located using a URL or URI whi
 
 _____
 
-## What Happens When I Press Enter or Click a Link?
+### What Happens When I Press Enter or Click a Link?
 
 As we are browsing the internet and we click a link or type an address to our address bar, we say that a *request* is being made to a server. We're asking another computer somewhere else in the world to send us the webpage (a document) or some other information over the internet so that our browser can read it and present it to us. The _response_ is what our browser gets back from the server. This entire cycle is called the **request-response lifecycle**. When we make a request, we should get a response.
 
