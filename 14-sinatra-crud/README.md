@@ -4,11 +4,9 @@
 
 ### SWBATs
 
-1. Make a CRUD app using Sinatra
-2. Demonstrate how REST is used with CRUD
-3. Understand the difference between static and dynamic routes
-4. Understand what information Sinatra uses to create the `params` hash
-5. Get information from the `params` hash in a controller method
+1. Demonstrate how REST is used with CRUD
+2. Understand the difference between static and dynamic routes
+3. Get information from the `params` hash in a controller method
 4. Know how to write the following HTML tags: `<a>`, `<form>`, `<input>`
 5. Understand the difference between rendering and redirecting
 
