@@ -106,7 +106,6 @@ DELETE -> Delete
 </details>
 
 
-
 Let's say we wanted to make a recipe app with a recipe as one of our resources/models and we're using RESTful routes.
 
 1. We want the user to be able to view a page that displays all the receipes.
@@ -140,9 +139,11 @@ Rack can be messy; It gives people a lot of flexibility, but at the expense of t
 
 We're going to start creating a Recipe Book app where a user can keep track of their recipes! There's different concepts that we have to cover throughout this project, so building this up is going to take us the next few lectures.
 
-- Domain: Recipe Book
-- Relationships: User -< Recipes
-- App Name: Flatiron Recipes
+Recipe App
+Models: user, recipe
+Relationships: user -< recipe
+App Name: Nerdy Nummies
+
 
 #### Deliverables
 For each deliverable, what is the route? What CRUD action does is correspond to?
