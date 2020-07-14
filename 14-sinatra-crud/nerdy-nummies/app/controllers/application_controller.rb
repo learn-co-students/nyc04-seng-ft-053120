@@ -16,33 +16,33 @@ class ApplicationController < Sinatra::Base
     erb :pizza
   end
 
-  # Task 1: Show a page with all the users
+  # Show a page with all the users
   get '/users' do
     @users = User.all
     erb :index
   end
 
-  # Task: display a form where a new user can be created
+  # Display a form where a new user can be created
   get '/users/new' do
     erb :new
   end
 
-  # Task: handle a post request & create the new user
+  # Handle a post request & create the new user
   # with the information from the form
   post '/users' do
-    # "Hello World"
     # binding.pry
     user = User.create(params[:user])
     redirect "/users/#{user.id}"
   end
 
-  # Task: display a form to edit a user
+  # Display a form to edit a user
   get '/users/:id/edit' do
     # "Hello World"
     @user = User.find(params[:id])
     erb :edit
   end
 
+  # Handle request to update user with information from the form
   patch '/users/:id' do
     # binding.pry
     # find the user that we want to update
@@ -53,6 +53,7 @@ class ApplicationController < Sinatra::Base
     redirect "/users/#{user.id}"
   end
 
+  # Delete a specific user
   delete '/users/:id' do
     # binding.pry
     # find the user we want to delete
@@ -63,7 +64,7 @@ class ApplicationController < Sinatra::Base
     redirect '/users'
   end
 
-
+  # Display a page with information about one specific user
   get '/users/:id' do
     # "Hello World"
     # binding.pry
