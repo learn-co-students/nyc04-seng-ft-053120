@@ -5,6 +5,7 @@ class ApplicationController < Sinatra::Base
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
+    set :method_override, true
   end
 
   get "/" do
@@ -35,6 +36,33 @@ class ApplicationController < Sinatra::Base
     redirect "/users/#{user.id}"
   end
 
+  # Task: display a form to edit a user
+  get '/users/:id/edit' do
+    # "Hello World"
+    @user = User.find(params[:id])
+    erb :edit
+  end
+
+  patch '/users/:id' do
+    # binding.pry
+    # find the user that we want to update
+    user = User.find(params[:id])
+    # update the user
+    user.update(params[:user])
+    # redirect to the user's show page
+    redirect "/users/#{user.id}"
+  end
+
+  delete '/users/:id' do
+    # binding.pry
+    # find the user we want to delete
+    user = User.find(params[:id])
+    # delete them
+    user.destroy
+    # redirect users index page
+    redirect '/users'
+  end
+
 
   get '/users/:id' do
     # "Hello World"
@@ -49,6 +77,8 @@ class ApplicationController < Sinatra::Base
   #   @user = User.find(2)
   #   erb :show
   # end
+
+  
 
 
 
