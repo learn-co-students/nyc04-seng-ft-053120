@@ -10,6 +10,22 @@
 <br>
 <h3>Favorite Foods</h3>
 <%= @user.fave_foods %>
+<br>
+<br>
+<br>
+<% if @recipes.count > 0 %>
+<h2>My Recipes:</h2>
+    <% @recipes.each do |recipe| %>
+        <h4><%= recipe.name %> | <%=  recipe.rating %></h4>
+        <%= recipe.ingredients %>
+        <br>
+    <% end %>
+<% end %>
+
+
+
+
+
 <br><br><br>
 <form method="POST" action="/users/<%= @user.id %>">
     <input type="hidden" name="_method" value="DELETE">

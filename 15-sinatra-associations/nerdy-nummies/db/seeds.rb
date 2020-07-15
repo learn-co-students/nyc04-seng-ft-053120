@@ -30,3 +30,37 @@ User.create([
 ])
 
 puts "Finished creating users 🙌"
+puts "Creating recipes..."
+
+Recipe.create([
+    {
+        name: "eggs benedict",
+        ingredients: "egg salt butter pepper",
+        preptime: "10 min",
+        rating: 10,
+        user_id: User.first.id
+    },
+    {
+        name: "rice",
+        ingredients: "rice. water",
+        preptime: "30 min",
+        rating: 10,
+        user_id: User.first.id
+    },
+    {
+        name: "pasta",
+        ingredients: "pasta, water",
+        preptime: "10 min",
+        rating: 3,
+        user_id: User.first.id
+    },
+    {
+        name: "salmon roll",
+        ingredients: "salmon, rice, vinegar",
+        preptime: "40 min",
+        rating: 8,
+        user_id: User.first.id
+    }
+])
+
+puts "Finished creating recipes! 🍕"

@@ -1,8 +1,14 @@
 <h1>All of our users:</h1>
-
+<br>
 <a href="https://www.reddit.com/r/aww/">Click here to view cute animals</a>
-
+<br>
+<br>
+<br>
 <% @users.each do |user| %>
     <h3><a href="/users/<%= user.id %>"><%= user.name %></a></h3>
     <%= user.bio %>
 <% end %>
+<br>
+<br>
+<br>
+<a href="/users/new">Create a new user</a>
