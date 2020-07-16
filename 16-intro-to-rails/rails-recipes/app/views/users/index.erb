@@ -1,0 +1,15 @@
+<h1>Hello There</h1>
+
+<ul>
+<% @users.each do |user|%>
+   <li><a href="/users/<%= user.id %>"><%=user.name%> | <%=user.age%></a></li>
+
+   <%= link_to user.name, "/users/#{user.id}" %>
+   <br>
+   <%= link_to(user.name, user_path(user.id)) %>
+   <br>
+   <%= link_to(user.name, user_path(user)) %>
+   <br>
+   <%= link_to user.name, user %>
+<% end %>
+</ul>
