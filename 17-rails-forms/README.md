@@ -12,10 +12,29 @@ ___
 4. Use strong params to allow creating/updating models with mass assignment
 
 
+garden -< plant 2
+hotel -< room 0
+universe -< planet 0
+classic artist -< song 0
+program -< bug 1
+cat -< owner 0
+pizza -< topping 3
+movie -< character 1
+programmer -< headache 3
+student -< lab 1
+comedian -< joke 0
+library -< book 0
+trainer -< pokemon 7
+politician -< lies 12
+investor -< stock 3
+chicken -< chick 1
+player -< videogame 4
+karen -< manager  4
+
 ____
 
 ## Outline
-- [ ] Come up with domain & one to many relationship for app
+- [x] Come up with domain & one to many relationship for app
 - [ ] Create our model using `rails g model`
 - [ ] Work on CRUD, focus on routes and ActionView helpers
   - [ ] Read
