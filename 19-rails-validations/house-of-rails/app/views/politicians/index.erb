@@ -1,0 +1,6 @@
+<h1>All the politicians:</h1>
+
+<% @politicians.each do |politician|%>
+    <%= link_to politician.name, "/politicians/#{politician.id}" %> | <%= politician.age %>
+    <br>
+<% end %>
