@@ -1,0 +1,21 @@
+🙂
+<h1><%= @politician.name %></h1>
+<br>
+<hr>
+Position: <%= @politician.position %>
+<br>
+Party: <%= @politician.party %>
+<br>
+Age: <%= @politician.age %>
+<br>
+Approval Rating: <%= @politician.approval_rating %>
+<hr>
+<h4>Statements:</h4>
+<% @statements.each do |statement| %>
+    <%= statement.declaration %> (<%= statement.truth %>) | <%= statement.year %>
+    <br>
+<% end %>
+<hr>
+<%= link_to "Index Page", politicians_path %>
+
+<%= button_to "Delete", "/politicians/#{@politician.id}", method: :delete %>

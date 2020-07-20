@@ -16,7 +16,9 @@
   - [ ] Make a create form for the new model with a dropdown
   - [ ] Update our delete method from the first model
 
-___ 
+
+politician -< statement
+___
 
 ### ActiveRecord Associations Review
 
