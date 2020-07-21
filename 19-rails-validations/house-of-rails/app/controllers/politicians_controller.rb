@@ -23,11 +23,11 @@ class PoliticiansController < ApplicationController
         if politician.valid?
             redirect_to politicians_path
         else
+            # if politician is not valid, then we reload the form & display errors to the user
             # byebug
             flash[:errors] = politician.errors.full_messages
             redirect_to new_politician_path
         end
-        # if politician is not valid, then we reload the form & display errors to the user
     end
 
     def edit
