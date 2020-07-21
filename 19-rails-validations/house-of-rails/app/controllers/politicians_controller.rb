@@ -12,13 +12,22 @@ class PoliticiansController < ApplicationController
 
     def new
         @politician = Politician.new
+        @errors = flash[:errors]
         render :new
     end
 
     def create
-        # byebug
-        Politician.create(politician_params)
-        redirect_to politicians_path
+        politician = Politician.create(politician_params)
+        # check whether the politician is/is not valid
+        # if politician is valid, then redirect to the politicians path
+        if politician.valid?
+            redirect_to politicians_path
+        else
+            # byebug
+            flash[:errors] = politician.errors.full_messages
+            redirect_to new_politician_path
+        end
+        # if politician is not valid, then we reload the form & display errors to the user
     end
 
     def edit
