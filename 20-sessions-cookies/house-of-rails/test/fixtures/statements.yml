@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  declaration: MyString
+  truth: false
+  year: 1
+  politician: one
+
+two:
+  declaration: MyString
+  truth: false
+  year: 1
+  politician: two

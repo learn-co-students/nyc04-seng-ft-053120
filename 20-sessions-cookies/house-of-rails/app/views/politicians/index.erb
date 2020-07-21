@@ -1,0 +1,12 @@
+<h1>All the politicians:</h1>
+<ul>
+<% @politicians.each do |politician|%>
+    <li><%= link_to politician.name, "/politicians/#{politician.id}" %> | <%= politician.age %></li>
+    <br>
+<% end %>
+</ul>
+<br>
+<hr>
+☞ <%= link_to "Create a politician", new_politician_path %>
+<br>
+☞ <%= link_to "Create a statement", new_statement_path %>
