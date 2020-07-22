@@ -18,4 +18,5 @@ Rails.application.routes.draw do
 
   # resources :politicians, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   resources :politicians
+  patch '/sessions/reset', to: 'sessions#reset_view_tracker'
 end
