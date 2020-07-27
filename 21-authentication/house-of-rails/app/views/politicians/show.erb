@@ -1,0 +1,32 @@
+🙂 <h4>You have <%= session[:view_tracker] %> views left until an ad!!</h4>
+<h1><%= @politician.name %></h1>
+<hr>
+
+<% if session[:view_tracker] > 0 %>
+    <p>
+    Position: <%= @politician.position %>
+    <br>
+    Party: <%= @politician.party %>
+    <br>
+    Approval Rating: <%= @politician.approval_rating %>
+    <br>
+    Age: <%= @politician.age %>
+    </p>
+    <hr>
+    <h4>Statements:</h4>
+    <ul>
+    <% @statements.each do |statement| %>
+        <li><%= statement.declaration %> (<%= statement.truth %>) | <%= statement.year %></li>
+        <br>
+    <% end %>
+    </ul>
+    <br>
+    ☞ <%= link_to "Create a statement", new_statement_path %>
+    <hr>
+    <br>
+    <%= button_to "Delete Politician", "/politicians/#{@politician.id}", method: :delete %>
+    ☞ <%= link_to "Index Page", politicians_path %>
+<% else %>
+    <iframe width="907" height="510" src="https://www.youtube.com/embed/ssBt8DrbAi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <%= button_to "I swear I watched this ad", "/sessions/reset", method: :patch %>
+<% end %>

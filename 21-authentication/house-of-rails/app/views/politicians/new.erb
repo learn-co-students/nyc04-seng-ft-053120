@@ -1,0 +1,26 @@
+<h1>Create a politician form</h1>
+<hr>
+<% if @errors %>
+    <% @errors.each do |error| %>
+        <p style="color:red"><%= error %></p>
+    <% end %>
+<% end %>
+<%= form_with model: @politician, html: { class: "form" } do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :position %>
+    <%= f.text_field :position %>
+    <br>
+    <%= f.label :party %>
+    <%= f.text_field :party %>
+    <br>
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+    <br>
+    <%= f.label :approval_rating %>
+    <%= f.number_field :approval_rating %>
+    <br>
+    <br>
+    <%= f.submit "Create Politician" %>
+<% end %>

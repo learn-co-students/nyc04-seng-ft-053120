@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HouseOfRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body class="body">
+    <header class="menu">
+        <div class="container">
+          <nav>
+            <%= link_to "Politicians", politicians_path, class: "item" %>
+            <%= link_to "Create Politician", new_politician_path, class: "item" %>
+          </nav>
+          <nav class="right">
+            <span class="item">
+              Welcome, User!
+            </span>
+          </nav>
+        </div>
+      </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

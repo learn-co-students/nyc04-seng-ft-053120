@@ -1,0 +1,18 @@
+<h1>Create a new statement!</h1>
+
+<%= form_with model: @statement, html: { class: "form" } do |f| %>
+    <%= f.label :declaration %>
+    <%= f.text_field :declaration %>
+    <br>
+    <%= f.label :year %>
+    <%= f.number_field :year %>
+    <br>
+    <%= f.label :politician_id %>
+    <%= collection_select(:statement, :politician_id, Politician.all, :id, :name) %>
+    <br>
+    <%= f.label :truth %>
+    <%= f.check_box :truth, :class => "checkbox" %>
+    <br>
+    <br>
+    <%= f.submit "Create Statement" %>
+<% end %>
