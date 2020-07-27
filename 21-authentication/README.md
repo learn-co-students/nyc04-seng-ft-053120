@@ -59,10 +59,14 @@ In our application, we're going to have a user table in our database with a user
 <pre>
 You can think of hashing as a digital fingerprint of different kinds of data. When a string has been “hashed” it means it has been turned into a scrambled representation of itself. Everytime we pass in a certain string through a hashing algorithm, we'll get the same output. 
 
+"password123456" -> "fdjkfdhkjsfhdksjfdasd"
+"password123456" -> "fdjkfdhkjsfhdksjfdasd"
+"password321" -> "fdamniwewqq9320932"
+
 <strong>There are two important notes to know about hashing:</strong>
 <li>One is that it's irreversible; it's a one way operation. An analogy is that it's like a meat grinder. Once you grind the meat, you can't feed the meat back through the meat grinder and get the original state back. </li>
 
-</li>The second note is that the algorithm for hashing doesn't change. Given the same input will produce the same output.</li>
+<li>The second note is that the algorithm for hashing doesn't change. Given the same input will produce the same output.</li>
 
 </pre>
 </details>
@@ -84,6 +88,10 @@ It's not enough to have just the plain text password and the hashed value becaus
 A way to defeat rainbow table attacks is by adding additional information to the plain text password before it gets encrypted. We call this additional information a "salt". 
 
 A new salt gets randonmly generated with every password. Typically, that salt value is appended to the plain text password and then the result is hashed. The hashed value and the salt are stored in the database.
+
+"password1234" + "rieskfnsd" -> "rieskfnsdfsafsdfdsfbromtkgew"
+"password1234" + "vnms,nkjg" -> "vnms,nkjgfdsaiqopqp2321;pokew"
+
 </pre>
 </details>
 </p>
