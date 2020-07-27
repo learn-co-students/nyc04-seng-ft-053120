@@ -13,8 +13,9 @@
 4. Expose this information in a rails app
 5. Review sessions and cookies, as well as implement sign up, log in, and log out
 
+## Part I
 
-## Discussion
+### Discussion
 
 <p>
 <details>
@@ -99,6 +100,13 @@ A new salt gets randonmly generated with every password. Typically, that salt va
 ### Implementation 
 - Create a `username` and `password_digest` field for authentication
 - BCrypt: [`create` vs `new`, `==`](https://github.com/codahale/bcrypt-ruby/blob/master/lib/bcrypt/password.rb)
+
+## Part II
+- Sign Up vs Login 
+- When to use a "SessionsController" and when to use ApplicationController
+- Locking down parts of our application
+- Using information about our signed in user
+- Logout
 
 
 ## Steps
