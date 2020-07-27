@@ -21,11 +21,11 @@
     <% end %>
     </ul>
     <br>
-    ☞ <%= link_to "Create a statement", new_statement_path %>
+    ☞ <%= link_to "Create a statement", new_statement_path, class: "item"  %>
     <hr>
     <br>
     <%= button_to "Delete Politician", "/politicians/#{@politician.id}", method: :delete %>
-    ☞ <%= link_to "Index Page", politicians_path %>
+    ☞ <%= link_to "Index Page", politicians_path, class: "item" %>
 <% else %>
     <iframe width="907" height="510" src="https://www.youtube.com/embed/ssBt8DrbAi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <%= button_to "I swear I watched this ad", "/sessions/reset", method: :patch %>
