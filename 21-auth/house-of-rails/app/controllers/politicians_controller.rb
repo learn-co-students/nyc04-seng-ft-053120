@@ -1,5 +1,6 @@
 class PoliticiansController < ApplicationController
     before_action :set_view_tracker
+    before_action :set_politician, only: [:show, :edit, :update, :destroy]
     
     def index
         # byebug
@@ -8,18 +9,10 @@ class PoliticiansController < ApplicationController
     end
 
     def show
-        # byebug
-         
-        # if the view tracker is nil -> set to 3
-        # if session[:view_tracker] == nil
-        #     session[:view_tracker] = 3
-        # end
-        # session[:view_tracker] ||= 3
         #if the view tracker has a integer value -> subtract 1 from it
         session[:view_tracker] = session[:view_tracker] - 1
-
-        @politician = Politician.find(params[:id])
         @statements = @politician.statements
+
         render :show
     end
 
@@ -30,7 +23,6 @@ class PoliticiansController < ApplicationController
     end
 
     def create
-        # byebug
         politician = Politician.create(politician_params)
         # check whether the politician is/is not valid
         # if politician is valid, then redirect to the politicians path
@@ -45,30 +37,30 @@ class PoliticiansController < ApplicationController
     end
 
     def edit
-        @politician = Politician.find(params[:id])
         render :edit
     end
 
     def update
-        # find the politician that we want to edit
-        politician = Politician.find(params[:id])
-        # actually edit the politician, use strong params
-        politician.update(politician_params)
+        # edit the politician, use strong params
+        @politician.update(politician_params)
         # redirect 
-        redirect_to politician_path(politician.id)
+        redirect_to politician_path(@politician.id)
     end
 
     def destroy
-        # find the politician to delete
-        politician = Politician.find(params[:id])
-        # politician.statements.destroy_all
-        # delete them
-        politician.destroy
+        # find the politician to delete (before_action :set_politician)
+        # destroy all the statements of this politician
+        # delete the politician
+        @politician.destroy
         redirect_to politicians_path
     end
 
     private
     def politician_params
         params.require(:politician).permit(:name,:position,:party,:age,:approval_rating)
+    end
+
+    def set_politician 
+        @politician = Politician.find(params[:id])
     end
 end

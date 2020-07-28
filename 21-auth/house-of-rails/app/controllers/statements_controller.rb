@@ -1,5 +1,7 @@
 class StatementsController < ApplicationController
+    before_action :set_statement, only: [:show, :edit, :update, :destroy]
     before_action :authorize_user, only: [:edit, :update, :destroy]
+    
     def new
         if session[:user_id]
             @statement = Statement.new
@@ -10,14 +12,13 @@ class StatementsController < ApplicationController
     end
 
     def create 
-        # byebug
         merged_params = statement_params.merge(user_id: @current_user.id)
         statement = Statement.create(merged_params)
         redirect_to "/politicians/#{statement.politician.id}"
     end
     
     def show
-        @statement = Statement.find(params[:id])
+        render :show
     end
 
     def index
@@ -25,7 +26,6 @@ class StatementsController < ApplicationController
     end
 
     def edit
-        @statement = Statement.find(params[:id])
         if @current_user == @statement.user
             render :edit
         else
@@ -34,17 +34,17 @@ class StatementsController < ApplicationController
     end
 
     def update
-        statement = Statement.find(params[:id])
-        statement.update(statement_params)
+        @statement.update(statement_params)
         redirect_to statements_path
     end
 
     def destroy
-        statement = Statement.find(params[:id])
-        statement.destroy
+        @statement.destroy
+        redirect_to statements_path
     end
 
     private 
+
     def statement_params
         params.require(:statement).permit(:declaration, :truth, :year, :politician_id)
     end
@@ -52,5 +52,9 @@ class StatementsController < ApplicationController
     def authorize_user
         @statement = Statement.find(params[:id])
         redirect_to @statement unless @current_user == @statement.user
+    end
+
+    def set_statement
+        @statement = Statement.find(params[:id])
     end
 end
