@@ -1,5 +1,6 @@
 class Statement < ApplicationRecord
   belongs_to :politician
+  belongs_to :user
 
   # Task 1: statement declaration should be unique for a politician
   validates :declaration, uniqueness: {

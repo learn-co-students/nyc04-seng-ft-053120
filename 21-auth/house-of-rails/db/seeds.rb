@@ -7,7 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Statement.destroy_all
 Politician.destroy_all
+User.destroy_all
 
+puts "Creating users..."
+User.create([
+    {
+        username: "raffy",
+        password: "password1234"
+    },
+    {
+        username: "michelle",
+        password: "password1234"
+    },
+    {
+        username: "nick",
+        password: "password1234"
+    },
+    {
+        username: "leslie",
+        password: "password1234"
+    }
+])
+
+puts "Finished creating users!"
 puts "Creating politicians..."
 
 Politician.create([
@@ -44,19 +66,22 @@ Statement.create([
         declaration: "I am not lying",
         truth: true,
         year: 1998,
-        politician_id: Politician.last.id
+        politician_id: Politician.last.id,
+        user_id: User.first.id
     },
     {
         declaration: "The capital of NY is NYC",
         truth: false,
         year: 2015,
-        politician_id: Politician.last.id
+        politician_id: Politician.last.id,
+        user_id: User.second.id
     },
     {
         declaration: "I am not lying",
         truth: false,
         year: 2020,
-        politician_id: Politician.last.id
+        politician_id: Politician.last.id,
+        user_id: User.last.id
     }
 ])
 puts "Finished creating statements 🙈"

@@ -1,0 +1,9 @@
+<h1><%= @statement.declaration %></h1>
+
+<h4>Stated by <%= @statement.politician.name %> in the year <%= @statement.year %></h4>
+
+<% if @current_user == @statement.user %>
+    <%= button_to "Edit", edit_statement_path(@statement), method: :get %>
+    <br>
+    <%= button_to "Delete statement", @statement, method: :delete %>
+<% end %>

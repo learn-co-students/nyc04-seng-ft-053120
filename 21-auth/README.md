@@ -108,6 +108,13 @@ A new salt gets randonmly generated with every password. Typically, that salt va
 - Using information about our signed in user
 - Logout
 
+politician -< statement
+user
+
+
+
+politician -< statement
+user -< statement
 
 ## Steps
 

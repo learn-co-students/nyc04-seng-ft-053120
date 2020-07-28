@@ -1,0 +1,10 @@
+<h1>All the statements:</h1>
+<ul>
+<% @statements.each do |statement|%>
+    <li><%= link_to statement.declaration, "/statements/#{statement.id}" %> | <%= statement.year %></li>
+    <br>
+<% end %>
+</ul>
+<br>
+<hr>
+☞ <%= link_to "Create a statement", new_statement_path %>

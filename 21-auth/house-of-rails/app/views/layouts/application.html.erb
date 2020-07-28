@@ -19,6 +19,7 @@
             <span class="item">
               <% if @current_user %>
                 Welcome, <%= @current_user.username %>!
+                <%= link_to "Logout", "/logout", method: :delete %>
               <% else %>
                 <%= link_to "Sign Up", "/signup" %>
                 <%= link_to "Log in", "/login" %>

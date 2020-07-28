@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users
-  resources :statements, only: [:new, :create]
+  resources :statements, only: [:new, :create, :index, :edit, :update, :destroy, :show]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # index
   # get '/politicians', to: 'politicians#index'
@@ -21,5 +21,7 @@ Rails.application.routes.draw do
   resources :politicians
   patch '/sessions/reset', to: 'sessions#reset_view_tracker'
   get '/signup', to: 'users#new', as: "signup"
-
+  get '/login', to: 'sessions#new', as: 'login'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy', as: 'logout'
 end
