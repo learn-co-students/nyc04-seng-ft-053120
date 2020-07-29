@@ -1,0 +1,49 @@
+.main-title {
+    color: rgb(95, 128, 201);
+}
+
+header {
+    margin-bottom: 5em;
+}
+
+body#body-id {
+    font-family: "Lucida Console", Courier, monospace;
+    background-image: url('https://cdn.vox-cdn.com/thumbor/MTYxZvNYRf3k_taVeAEdIopdPa0=/10x0:2878x1871/1820x1213/filters:focal(1680x559:2140x1019):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56641559/pexels_photo_59523.0.jpeg');
+
+}
+
+#main {
+    /* margin-left: 3em; */
+    background-color: rgb(193, 159, 245);
+    padding: 3em;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    opacity: 0.75;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 1em;
+    color: rgb(50,70,100);
+    font-size: larger;
+}
+
+#id-red {
+    color: red;
+}
+
+.link-green {
+    color: green;
+}
+
+.link-purple {
+    color: purple;
+}
+
+.class-orange {
+    color: orange
+}
+#button-top {
+    margin-top: 5em;
+}
