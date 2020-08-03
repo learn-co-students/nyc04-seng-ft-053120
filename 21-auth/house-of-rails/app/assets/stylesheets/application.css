@@ -18,12 +18,15 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  
 }
 body {
     font-family: 'Courier New',  monospace;
     background-color: rgba(49, 145, 209, 0.7);
     color: #f1f1f1;
     /* font-size: 1.5em; */
+    background-image: url('img_girl.jpg');
+  opacity: 0.75;
 }
 
 .menu .container,
