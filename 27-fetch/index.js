@@ -18,6 +18,9 @@
 let dogButton = document.querySelector("#hello-button")
 let dogsUl = document.querySelector("ul#dogs")
 
+
+
+
 dogButton.addEventListener("click", function(evt){
 
   fetch("https://dog.ceo/api/breeds/image/random")
@@ -55,21 +58,14 @@ let turnDogIntoHTML = (dogObject) => {
   
 }
 
+
+
+
+
 // REGULAR FUNCTION DECLARATION
 
 // function turnDogIntoHTML(dogObject){
 // }
-
-
-
-
-
-
-
-
-
-
-
 
 function oneWayToDeclareAFunction(){
 
