@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Cinnamon",
-      "count": 5
+      "count": 11
     },
     {
       "id": 2,
@@ -12,22 +12,12 @@
     },
     {
       "name": "Popeye's Coleslaw",
-      "count": 1,
+      "count": 11,
       "id": 3
     },
     {
-      "name": "Chikun Sandwich",
-      "count": 1,
-      "id": 4
-    },
-    {
-      "name": "Chopped Cheese",
-      "count": 1,
-      "id": 5
-    },
-    {
       "name": "Cheddar",
-      "count": 1,
+      "count": 14,
       "id": 6
     }
   ]
