@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+
 let toyCollectionDiv = document.querySelector("#toy-collection")
 let toyForm = document.querySelector(".add-toy-form")
 
