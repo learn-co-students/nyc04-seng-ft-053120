@@ -1,4 +1,4 @@
-const listings = [
+const LISTINGS = [
   {
     id: 1,
     title: "Intergalactic Macrame Plant Hangers",
@@ -154,3 +154,5 @@ const listings = [
     category: "Invasion Accessory"
   }
 ]
+
+export default LISTINGS
