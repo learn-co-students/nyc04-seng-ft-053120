@@ -2,6 +2,21 @@ import React from 'react'
 import { formatPrice } from '../utils'
 
 class ListingItem extends React.Component {
+  state = {
+    favorited: false
+  }
+
+  toggleFavorite = () => {
+    this.setState({
+      favorited: !this.state.favorited
+    })
+
+    // this.setState(prevState => {
+    //   return {
+    //     favorited: !prevState.favorited
+    //   }
+    // })
+  }
 
   render() {
     const { imageUrl, title, category, price } = this.props.listing
@@ -10,7 +25,7 @@ class ListingItem extends React.Component {
       <div className="card">
         <div className="image">
           <img src={imageUrl} alt={title} />
-          <button className="favorite">{false ? "♥" : "♡"}</button>
+          <button onClick={this.toggleFavorite} className="favorite">{this.state.favorited ? "♥" : "♡"}</button>
         </div>
         <div className="details">
           <h4 className="title" title={title}>{title}</h4>

@@ -276,6 +276,7 @@ section {
 .card .image .favorite:focus,
 .card .image .favorite:hover {
   opacity: 1;
+  box-shadow: none;
 }
 
 .card .details {
