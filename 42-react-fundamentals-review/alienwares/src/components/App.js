@@ -4,14 +4,24 @@ import NavBar from './NavBar';
 import ListingContainer from './ListingContainer';
 
 class App extends React.Component {
+  state = {
+    searchTerm: ""
+  }
+
+  handleSearchChange = searchTerm => {
+    // console.log(searchTerm)
+    this.setState({
+      searchTerm: searchTerm
+    })
+  }
 
   render() {
     return (
       <>
-        <NavBar />
+        <NavBar handleSearchChange={this.handleSearchChange} searchTerm={this.state.searchTerm} />
         <main>
           <Filter />
-          <ListingContainer />
+          <ListingContainer searchTerm={this.state.searchTerm} />
         </main>
       </>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavBar = () => {
+const NavBar = (props) => {
 
   return (
     <header>
@@ -9,7 +9,12 @@ const NavBar = () => {
           <h2>AlienWares</h2>
         </div>
         <form className="search">
-          <input type="text" placeholder="Search listings..." />
+          <input
+            type="text"
+            placeholder="Search listings..."
+            value={props.searchTerm}
+            onChange={event => props.handleSearchChange(event.target.value)}
+          />
           <input type="submit" value="🔍" />
         </form>
         <nav>
