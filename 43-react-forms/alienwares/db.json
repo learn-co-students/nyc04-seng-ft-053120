@@ -24,7 +24,7 @@
     {
       "id": 4,
       "title": "Face Hugger Mask, Alien inspired",
-      "price": 30.00,
+      "price": 30,
       "imageUrl": "https://i.etsystatic.com/9559565/r/il/247f79/2331454523/il_1588xN.2331454523_61ds.jpg",
       "category": "Fashion"
     },
@@ -59,7 +59,7 @@
     {
       "id": 9,
       "title": "internet moneys",
-      "price": 11768.50,
+      "price": 11768.5,
       "imageUrl": "https://s27389.pcdn.co/wp-content/uploads/2020/06/bitcoin-cryptocurrencies-perfect-hedge-covid-19-crisis-1013x440.jpeg",
       "category": "Currency"
     },
@@ -108,7 +108,7 @@
     {
       "id": 16,
       "title": "Large Glass Capsule (fits 1 adult-size captured human)",
-      "price": 130.00,
+      "price": 130,
       "imageUrl": "https://image.shutterstock.com/image-illustration/empty-glass-capsule-product-stand-260nw-1479001706.jpg",
       "category": "Spaceship Accessory"
     },
@@ -153,6 +153,34 @@
       "price": 999.99,
       "imageUrl": "https://media.istockphoto.com/photos/apple-iphone-x-on-office-desk-with-icons-of-social-media-facebook-picture-id962440944?k=6&m=962440944&s=170667a&w=0&h=OszsXzXPr7yq-XXsXzkzcu_zWuCYW_234rdQif_s5l4=",
       "category": "Invasion Accessory"
+    },
+    {
+      "title": "Alien Mask Held by Cuomo",
+      "price": 0,
+      "imageUrl": "https://www.gannett-cdn.com/presto/2018/12/28/PWES/04d026aa-ad5d-4f12-b9b8-119f249ea674-Screen_Shot_2018-12-28_at_3.09.26_PM.png",
+      "category": "Fashion",
+      "id": 23
+    },
+    {
+      "title": "Fun pool inflatable *does not melt in lava*",
+      "price": 299.99,
+      "imageUrl": "https://www.partypalooza.com/Merchant2/graphics/00000001/inflatealiens24_540x540.jpg",
+      "category": "Spaceship Accessory",
+      "id": 24
+    },
+    {
+      "title": "Anti-Radiation Umbrella",
+      "price": 510,
+      "imageUrl": "https://i.pinimg.com/originals/03/44/73/0344732da5a5c3ce1ba5889caad88d0b.jpg",
+      "category": "Fashion",
+      "id": 25
+    },
+    {
+      "title": "Classical Trambone (slightly used)",
+      "price": 50,
+      "imageUrl": "https://i.cbc.ca/1.3348331.1449113572!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/cantina-band.jpg",
+      "category": "Communications",
+      "id": 26
     }
   ]
 }

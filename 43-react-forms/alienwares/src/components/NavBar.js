@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavBar = ({ searchTerm, onSearchChange }) => {
+const NavBar = ({ searchTerm, onSearchChange, onPageChange }) => {
 
   return (
     <header>
@@ -18,8 +18,8 @@ const NavBar = ({ searchTerm, onSearchChange }) => {
           <input type="submit" value="🔍" />
         </form>
         <nav>
-          <button>View Listings</button>
-          <button>Add Listing</button>
+          <button onClick={() => onPageChange("listings")}>View Listings</button>
+          <button onClick={() => onPageChange("new-listing")}>Add Listing</button>
         </nav>
       </div>
     </header>

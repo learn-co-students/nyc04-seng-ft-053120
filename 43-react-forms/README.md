@@ -1,21 +1,28 @@
-State, Events, and Conditional Rendering
+Forms & Inverse Data Flow
 ===
 
 ## SWBATs
-- [ ] Explain why we use controlled forms
-- [ ] Implement a controlled form
 - [ ] Draw a component hierarchy and describe the Flow of Information
 - [ ] Pass data up and down the component hierarchy with our callbacks
+- [ ] Explain why we use controlled forms
+- [ ] Implement a controlled form
 - [ ] Use form data to update state in various ways
 
 ## Outline
+- [ ] Refactor component to use inverse data flow
 - [ ] Create a form and make it controlled
 - [ ] Handle submitting the form and update state in parent using inverse data flow
 - [ ] Get more practice with controlled forms/inverse data flow by adding additional features
 
+## Key Terms:
+- **Inverse Data Flow**: Using a callback function to pass data from a child component to a parent component
+- **Controlled Form**: When component state controls the values of input fields in a form
+
 ## Features To Build
 - Refactor category picker to separate component (inverse data flow)
 - New Listing Form
+  - fetch POST
+  - add listing to state
 - Separate "Pages" for New Listings and View All Listings
 
 ### Icebox Features (when there's time...)
@@ -37,11 +44,12 @@ In vanilla JS, our typical process for working with forms and getting access to 
 ### React Controlled Forms
 In React, rather than looking into the DOM to get the form's input field values when the form is submitted, we use `state` to monitor the user's input as they type.
 
-- For each input you need:
+For each input, you need:
   1. Some state to manage the input
   2. An onChange listener on the input to monitor user input and update state
   3. A value attribute on the input that corresponds to a key in state
-  4. An onSubmit listener on the form to finally submit data
+
+You will also need an onSubmit listener on the form to finally submit data.
 
 For example, if we have a form component that looks like this:
 

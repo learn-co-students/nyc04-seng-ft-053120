@@ -1,24 +1,12 @@
 import React from 'react'
 import ListingItem from './ListingItem'
 import Pager from './Pager'
-import ListingForm from './ListingForm'
+import CategoryPicker from './CategoryPicker'
 
 class ListingContainer extends React.Component {
   state = {
     selectedCategory: "All",
-    listings: [],
     currentIndex: 0
-  }
-
-  // lifecycle methods
-  componentDidMount() {
-    fetch("http://localhost:3001/listings")
-      .then(r => r.json())
-      .then(listingsArray => {
-        this.setState({
-          listings: listingsArray
-        })
-      })
   }
 
   // event handlers
@@ -37,7 +25,7 @@ class ListingContainer extends React.Component {
 
   // render helpers
   getFilteredListings() {
-    return this.state.listings
+    return this.props.listings
       .filter(listing =>
         // first filter by category
         this.state.selectedCategory === "All" || listing.category === this.state.selectedCategory
@@ -61,19 +49,10 @@ class ListingContainer extends React.Component {
 
     return (
       <section>
-        <ListingForm />
-
-        {/* TODO: refactor to separate component */}
-        <div className="category-picker">
-          <button
-            className={this.state.selectedCategory === "All" ? "active" : ""}
-            onClick={() => this.setSelectedCategory("All")}
-          >All</button>
-          <button className={this.state.selectedCategory === "Spaceship Accessory" ? "active" : ""} onClick={() => this.setSelectedCategory("Spaceship Accessory")} >Spaceship Accessory</button>
-          <button className={this.state.selectedCategory === "Transportation" ? "active" : ""} onClick={() => this.setSelectedCategory("Transportation")} >Transportation</button>
-          <button className={this.state.selectedCategory === "Communications" ? "active" : ""} onClick={() => this.setSelectedCategory("Communications")} >Communications</button>
-          <button className={this.state.selectedCategory === "Fashion" ? "active" : ""} onClick={() => this.setSelectedCategory("Fashion")} >Fashion</button>
-        </div>
+        <CategoryPicker
+          selectedCategory={this.state.selectedCategory}
+          onCategoryChange={this.setSelectedCategory}
+        />
 
         <div className="card-list">
           {this.renderListings(filteredListings)}
