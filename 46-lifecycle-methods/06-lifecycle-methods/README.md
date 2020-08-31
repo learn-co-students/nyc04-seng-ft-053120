@@ -14,8 +14,6 @@ Component Lifecycle Methods
 - [ ] `console.log` to show lifecycle methods and test assumptions about order
 - [ ] Explain what common use cases for different lifecycles are
 
-
-
 ## Lecture Notes
 
 ### Mounting (Birth)

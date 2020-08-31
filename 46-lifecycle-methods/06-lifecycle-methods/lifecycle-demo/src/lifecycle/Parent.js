@@ -19,7 +19,7 @@ class Parent extends React.Component {
   render() {
     return (
       <div className="box">
-        <button onClick={this.toggle}>Click</button>
+        <button onClick={this.toggle}>Toggle: {this.state.toggled ? "ON" : "OFF"}</button>
         <p>Parent</p>
         <Child name="child" />
       </div>
