@@ -7,11 +7,32 @@ class Grandchild extends React.Component {
     this.state = {
       toggled: false
     }
+    componentLog(this)
+  }
+
+  componentDidMount() {
+    componentLog(this)
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    componentLog(this)
+  }
+
+  componentWillUnmount() {
+    componentLog(this)
+  }
+
+  toggle = () => {
+    this.setState(prevState => ({
+      toggled: !prevState.toggled
+    }))
   }
 
   render() {
+    componentLog(this)
     return (
       <div className="box">
+        <button onClick={this.toggle}>Toggle: {this.state.toggled ? "ON" : "OFF"}</button>
         <p>Grandchild</p>
       </div>
     );

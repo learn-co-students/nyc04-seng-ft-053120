@@ -22,6 +22,14 @@ When a component is initially rendered
 #### constructor
 - setting initial state (old school)
 - binding functions (old school)
+
+```js
+constructor(props) {
+  super(props) 
+  this.state = { something: "OK" }
+  this.handleClick = this.handleClick.bind(this)
+}
+```
 - initialize outside libraries / data
 
 #### render
@@ -34,6 +42,9 @@ When a component is initially rendered
 - setting intervals
 - custom event listeners
 - can call `setState` from here
+
+
+
 
 ### Updating (Life)
 Called everytime we `setState` or pass down new props
@@ -65,10 +76,10 @@ Post React 16.3, some lifecycle methods were slated for deprecation in 17.0 and 
 - For example, here there are a few places where you _can_ put `setState`, but they would be code smells as you probably wouldn't want to be doing them in those lifecycle methods.
 - The important part is understanding where you _mustn't_ put `setState` as it could cause an infinite loop. `render` being the most obvious place _not_ to do `setState`.
 
-### Benchmarking (Extra Reading)
+### Extra Reading
 
 * [How to Benchmark React Components](https://engineering.musefind.com/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c)
-
+* [Mounting Diagram](https://docs.google.com/presentation/d/1J1HB30ZJp0XKOdjKC87aAbiiBbUJJWgfeecxlXyA9pQ/edit#slide=id.p)
 
 
 

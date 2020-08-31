@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
-import LifeCycleApp from './lifecycle/LifeCycleApp'
-// import TickerContainer from './ticker/TickerContainer'
+// import LifeCycleApp from './lifecycle/LifeCycleApp'
+import TickerContainer from './ticker/TickerContainer'
 
 class App extends React.Component {
   state = {
@@ -15,7 +15,7 @@ class App extends React.Component {
           Show app:
           <input type="checkbox" checked={this.state.showChild} onChange={e => this.setState({ showChild: e.target.checked })} />
         </label>
-        {this.state.showChild ? <LifeCycleApp /> : null}
+        {this.state.showChild ? <TickerContainer /> : null}
       </div>
     );
   }

@@ -8,6 +8,19 @@ class Parent extends React.Component {
     this.state = {
       toggled: false
     }
+    componentLog(this)
+  }
+
+  componentDidMount() {
+    componentLog(this)
+  }
+
+  componentDidUpdate() {
+    componentLog(this)
+  }
+
+  componentWillUnmount() {
+    componentLog(this)
   }
 
   toggle = () => {
@@ -17,6 +30,7 @@ class Parent extends React.Component {
   }
 
   render() {
+    componentLog(this)
     return (
       <div className="box">
         <button onClick={this.toggle}>Toggle: {this.state.toggled ? "ON" : "OFF"}</button>
@@ -30,3 +44,15 @@ class Parent extends React.Component {
 
 
 export default Parent;
+
+
+// constructor Parent
+// render Parent
+// constructor Child 
+// render Child
+// constructor Grandchild
+// render Grandchild
+
+// componentDidMount Grandchild
+// componentDidMount Child
+// componentDidMount Parent
