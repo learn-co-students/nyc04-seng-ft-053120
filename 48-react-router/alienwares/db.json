@@ -1,0 +1,212 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "title": "Intergalactic Macrame Plant Hangers",
+      "price": 34.98,
+      "imageUrl": "https://i.etsystatic.com/7759994/r/il/5ded20/2459928413/il_1588xN.2459928413_5vta.jpg",
+      "category": "Spaceship Accessory",
+      "favorite": false
+    },
+    {
+      "id": 2,
+      "title": "Refurbished Spaceship (Like New, Human Sold Separately)",
+      "price": 120000,
+      "imageUrl": "https://earthsky.org/upl/2015/11/UFO-close-encounter-shutterstock-sq-e1446423571676.jpg",
+      "category": "Transportation",
+      "favorite": true
+    },
+    {
+      "id": 3,
+      "title": "The owls are not what they seem",
+      "price": 49.99,
+      "imageUrl": "https://i.etsystatic.com/5220788/r/il/b1e98d/1451705673/il_794xN.1451705673_4aa2.jpg",
+      "category": "Communications",
+      "favorite": true
+    },
+    {
+      "id": 4,
+      "title": "Face Hugger Mask, Alien inspired",
+      "price": 30,
+      "imageUrl": "https://i.etsystatic.com/9559565/r/il/247f79/2331454523/il_1588xN.2331454523_61ds.jpg",
+      "category": "Fashion",
+      "favorite": false
+    },
+    {
+      "id": 5,
+      "title": "Child Feeder",
+      "price": 2020.98,
+      "imageUrl": "https://i0.wp.com/www.tor.com/wp-content/uploads/2014/12/ripley1.jpg?fit=313%2C%209999&crop=0%2C0%2C100%2C392px&quality=100",
+      "category": "Spaceship Accessory",
+      "favorite": true
+    },
+    {
+      "id": 6,
+      "title": "Wall decoration",
+      "price": 19.47,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71WaYUVBprL._AC_SL1024_.jpg",
+      "category": "Spaceship Accessory",
+      "favorite": true
+    },
+    {
+      "id": 7,
+      "title": "Phase Blaster 9000",
+      "price": 9000.01,
+      "imageUrl": "https://cdn.thisiswhyimbroke.com/images/mega-man-gun.jpg",
+      "category": "Fashion",
+      "favorite": false
+    },
+    {
+      "id": 8,
+      "title": "How to Speak Human (First Edition)",
+      "price": 20,
+      "imageUrl": "https://www.booktopia.com.au/http_coversbooktopiacomau/big/9780730359531/0000/how-to-speak-human.jpg",
+      "category": "Communications",
+      "favorite": false
+    },
+    {
+      "id": 9,
+      "title": "internet moneys",
+      "price": 11768.5,
+      "imageUrl": "https://s27389.pcdn.co/wp-content/uploads/2020/06/bitcoin-cryptocurrencies-perfect-hedge-covid-19-crisis-1013x440.jpeg",
+      "category": "Currency",
+      "favorite": false
+    },
+    {
+      "id": 10,
+      "title": "Buster Cannon EX series",
+      "price": 10000,
+      "imageUrl": "https://technabob.com/blog/wp-content/uploads/2016/12/proto-man-1.jpg",
+      "category": "Fashion",
+      "favorite": false
+    },
+    {
+      "id": 11,
+      "title": "Microverse Battery",
+      "price": 2000,
+      "imageUrl": "https://vignette.wikia.nocookie.net/rickandmorty/images/8/86/Microverse_Battery.png/revision/latest/scale-to-width-down/310?cb=20160910010946",
+      "category": "Spaceship Accessory",
+      "favorite": false
+    },
+    {
+      "id": 12,
+      "title": "Outer Space Alien Dude and Babe Shelf Sitters 2 Piece Statue Set",
+      "price": 80,
+      "imageUrl": "https://secure.img1-fg.wfcdn.com/im/75318122/resize-h800%5Ecompr-r85/1132/113200466/Outer+Space+Alien+Dude+and+Babe+Shelf+Sitters+2+Piece+Statue+Set.jpg",
+      "category": "Spaceship Accessory",
+      "favorite": false
+    },
+    {
+      "id": 13,
+      "title": "Predator - Wrist Gauntlets w/Extendable Blades",
+      "price": 40.98,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1349/1591/products/IMG_3325_1400x.png?v=1584033209g",
+      "category": "Toy",
+      "favorite": false
+    },
+    {
+      "id": 14,
+      "title": "Tiger King Air Freshener",
+      "price": 5.99,
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0710/5623/products/Tiger-King-2_1024x1024_ec1e28dc-8419-422e-b8af-c3be81a38aaf_1024x1024.jpg?v=1596219705",
+      "category": "Spaceship Accessory",
+      "favorite": false
+    },
+    {
+      "id": 15,
+      "title": "Child Trainer",
+      "price": 25.99,
+      "imageUrl": "https://i.pinimg.com/564x/3e/00/6f/3e006f17186f3336476f0e7655ac5c55.jpg",
+      "category": "Training Equipment",
+      "favorite": false
+    },
+    {
+      "id": 16,
+      "title": "Large Glass Capsule (fits 1 adult-size captured human)",
+      "price": 130,
+      "imageUrl": "https://image.shutterstock.com/image-illustration/empty-glass-capsule-product-stand-260nw-1479001706.jpg",
+      "category": "Spaceship Accessory",
+      "favorite": false
+    },
+    {
+      "id": 17,
+      "title": "Classical Music Disc",
+      "price": 50.45,
+      "imageUrl": "https://pic.ebid.net/upload_big/1/0/0/uo_1516041765-8951-225.jpg",
+      "category": "Communications",
+      "favorite": false
+    },
+    {
+      "id": 18,
+      "title": "Land of Bewilderment",
+      "price": 1.99,
+      "imageUrl": "https://www.nestleusa.com/sites/g/files/pydnoa536/files/asset-library/publishingimages/media/factsheets/florida/florida-banner.jpg",
+      "category": "Property",
+      "favorite": false
+    },
+    {
+      "id": 19,
+      "title": "Klingon Bedazzler",
+      "price": 49.99,
+      "imageUrl": "https://uc61e3a03bc1a924633f46000397.previews.dropboxusercontent.com/p/thumb/AA7R8Bg-AUQ82OMQHajhn6TAs7FGXkY2JSM58f0QOTY_fk-gu-1d_6EFZ999AdhDO9pDge_Z4dkyi4tVNKBHahdbdgA8WiVzM092G3UD6WKaiw6LqsWeV9SqhPEdcNx8BVZDw2MOpzcenzPF1ueXSGa_Pl6jH-NQddFIrl9yK8SK-tYITZz-Lfz4gLTBuRi3cU8ucPpwxopcD1Z5oqB90hpNkfO08ZgfXyT4x93QVJxoHoKfugO__sZpF74SPDn_MBPDnB_4b3xgFRsBQRU5fBD6ygIruPqIsfn-eboVqNf1x-IbDh2EjW0gydoRD-RTDA3YULFImxukAs81KgoJSTlVHsGo43M03CPuxME80JxzKUJeu2CbThetZ8GPP96eJlgt066DsiqxM2gJbfPQNuGE/p.png?fv_content=true&size_mode=5",
+      "category": "Fashion",
+      "favorite": false
+    },
+    {
+      "id": 20,
+      "title": "(insert your name here)",
+      "price": 9.99,
+      "imageUrl": "https://media2.fdncms.com/memphisflyer/imager/ancient-aliens/u/story/3718021/film3_ancientaliens2-w.jpg",
+      "category": "Spaceship Accessory",
+      "favorite": false
+    },
+    {
+      "id": 21,
+      "title": "internet moneys version 3.0",
+      "price": 0.12,
+      "imageUrl": "https://s3-ap-southeast-2.amazonaws.com/www.cryptoknowmics.com/crypto/wp-content/uploads/2020/03/Buy-Cardano-Via-Exchanges.png",
+      "category": "Currency",
+      "favorite": false
+    },
+    {
+      "id": 22,
+      "title": "Human Time-Consuming Apparatus",
+      "price": 999.99,
+      "imageUrl": "https://media.istockphoto.com/photos/apple-iphone-x-on-office-desk-with-icons-of-social-media-facebook-picture-id962440944?k=6&m=962440944&s=170667a&w=0&h=OszsXzXPr7yq-XXsXzkzcu_zWuCYW_234rdQif_s5l4=",
+      "category": "Invasion Accessory",
+      "favorite": false
+    },
+    {
+      "title": "Alien Mask Held by Cuomo",
+      "price": 0,
+      "imageUrl": "https://www.gannett-cdn.com/presto/2018/12/28/PWES/04d026aa-ad5d-4f12-b9b8-119f249ea674-Screen_Shot_2018-12-28_at_3.09.26_PM.png",
+      "category": "Fashion",
+      "favorite": false,
+      "id": 23
+    },
+    {
+      "title": "Fun pool inflatable *does not melt in lava*",
+      "price": 299.99,
+      "imageUrl": "https://www.partypalooza.com/Merchant2/graphics/00000001/inflatealiens24_540x540.jpg",
+      "category": "Spaceship Accessory",
+      "favorite": false,
+      "id": 24
+    },
+    {
+      "title": "Anti-Radiation Umbrella",
+      "price": 510,
+      "imageUrl": "https://i.pinimg.com/originals/03/44/73/0344732da5a5c3ce1ba5889caad88d0b.jpg",
+      "category": "Fashion",
+      "favorite": false,
+      "id": 25
+    },
+    {
+      "title": "Classical Trambone (slightly used)",
+      "price": 50,
+      "imageUrl": "https://i.cbc.ca/1.3348331.1449113572!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/cantina-band.jpg",
+      "category": "Communications",
+      "favorite": false,
+      "id": 26
+    }
+  ]
+}
