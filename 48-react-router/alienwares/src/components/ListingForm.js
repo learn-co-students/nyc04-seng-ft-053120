@@ -29,13 +29,15 @@ class ListingForm extends React.Component {
     })
       .then(r => r.json())
       .then(newListing => {
-        // TODO: redirect!
+        // TODO: redirect! /listings/newListingId
+        this.props.history.push(`/listings/${newListing.id}`)
+
         this.props.onFormSubmit(newListing)
-        this.setState(defaultState)
       })
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="form-container">
         <h2>New Listing</h2>

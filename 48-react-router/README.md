@@ -21,20 +21,32 @@ React Router
 
 ## SPAs
 
-- Benefits: 
-- Challenges:  
+- Benefits: faster! don't need that full page refresh, one HTML file, you can do more dynamically on the page (events are great!), easier to manipulate the DOM
+
+- Challenges: routing logic in rails was nice, validation on server side + flash messages, code organization, custom URL
+
 
 ## I Want To...
 - Use React Router in my application 
-  - **
+  - `npm install react-router-dom`
+  - use BrowserRouter in the index.js to wrap our application
+
 - Display a different component based on the URL
-  - **
+  - use the { Switch, Route } components from react-router
+  - wrap all Route components with Switch
+  - use the path prop on the Route to determine what component to show based on the URL
+
 - Make an anchor tag that uses React Router instead of making the page reload
-  - **
-- Access routing info (location, history, params...) from a component
-  - **
+  - use Link (or NavLink, which will get a special "active" class) with a "to" prop of the URL you want to go to
+  
+- Access routing info (location, history, params...) from a child component
+  - use the component prop on a Route component
+  - or use the render prop with callback `(routeProps => <ChildComponent history={routeProps.history}>)`
+  - use withRouter on ANY child component
+  - use hooks (useHistory, useLocation... ) on any function component
+
 - Programatically redirect the user based on some event (form submit, etc)
-  - **
+  - `props.history.push("/some-new-url")`
 
 ### Static vs Dynamic Routing
 

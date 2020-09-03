@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { formatPrice } from '../utils'
 
 class ListingItem extends React.Component {
@@ -21,12 +22,14 @@ class ListingItem extends React.Component {
   }
 
   render() {
-    const { imageUrl, title, category, price, favorite } = this.props.listing
+    const { id, imageUrl, title, category, price, favorite } = this.props.listing
 
     return (
       <div className="card">
         <div className="image">
-          <img src={imageUrl} alt={title} onClick={() => this.props.onPageChange("show-listing")} />
+          <Link to={`/listings/${id}`}>
+            <img src={imageUrl} alt={title} onClick={() => this.props.onPageChange("show-listing")} />
+          </Link>
           <button onClick={this.toggleFavorite} className="favorite">{favorite ? "♥" : "♡"}</button>
         </div>
         <div className="details">

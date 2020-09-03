@@ -1,12 +1,18 @@
 import React from 'react'
+import { NavLink, useHistory } from 'react-router-dom'
 
 const NavBar = ({ searchTerm, onSearchChange, onPageChange }) => {
+  const history = useHistory()
+
+  console.log(history)
 
   return (
     <header>
       <div className="top-nav">
-        <div className="logo" onClick={() => onPageChange("listings")}>
-          <h2>AlienWares</h2>
+        <div className="logo">
+          <NavLink to="/listings">
+            <h2>AlienWares</h2>
+          </NavLink>
         </div>
         <form className="search">
           <input
@@ -18,8 +24,12 @@ const NavBar = ({ searchTerm, onSearchChange, onPageChange }) => {
           <input type="submit" value="🔍" />
         </form>
         <nav>
-          <button onClick={() => onPageChange("favorites")}>View Favorites</button>
-          <button onClick={() => onPageChange("new-listing")}>Add Listing</button>
+          <NavLink to="/favorites">
+            <button>View Favorites</button>
+          </NavLink>
+          <NavLink to="/listings/new">
+            <button>Add Listing</button>
+          </NavLink>
         </nav>
       </div>
     </header>

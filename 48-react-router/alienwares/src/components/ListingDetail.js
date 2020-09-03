@@ -7,7 +7,8 @@ class ListingDetail extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/listings/1")
+    const id = this.props.match.params.id
+    fetch(`http://localhost:3001/listings/${id}`)
       .then(r => r.json())
       .then(listing => {
         this.setState({
@@ -33,6 +34,8 @@ class ListingDetail extends React.Component {
   }
 
   render() {
+    console.log(this.props)
+
     const { listing } = this.state
     if (!listing) return <h3>Loading...</h3>
 

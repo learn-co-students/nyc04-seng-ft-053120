@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom'
 import NavBar from './NavBar';
 import ListingContainer from './ListingContainer';
 import ListingForm from './ListingForm';
@@ -91,7 +92,40 @@ class App extends React.Component {
           searchTerm={this.state.searchTerm}
         />
         <main>
-          {this.getCurrentPage()}
+          <Switch>
+            <Route path="/listings" exact>
+              <ListingContainer
+                listings={this.state.listings}
+                onUpdateListing={this.handleUpdateListing}
+                searchTerm={this.state.searchTerm}
+                onlyFavorites={false}
+                onPageChange={this.handlePageChange}
+              />
+            </Route>
+
+            <Route path="/listings/new" render={routeProps => {
+              return <ListingForm history={routeProps.history} onFormSubmit={this.handleAddListing} />
+            }} />
+
+            <Route path="/listings/:id" render={routeProps => {
+              return <ListingDetail match={routeProps.match} />
+            }} />
+
+            <Route path="/favorites">
+              <ListingContainer
+                listings={this.state.listings}
+                onUpdateListing={this.handleUpdateListing}
+                searchTerm={this.state.searchTerm}
+                onlyFavorites={true}
+                onPageChange={this.handlePageChange}
+              />
+            </Route>
+
+            <Route path="*">
+              <h1>Area 51: Access Denied!</h1>
+            </Route>
+            {/* {this.getCurrentPage()} */}
+          </Switch>
         </main>
       </>
     );

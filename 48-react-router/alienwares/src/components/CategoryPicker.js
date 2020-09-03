@@ -1,8 +1,11 @@
 import React from 'react'
+// higher order component!
+import { withRouter } from 'react-router-dom'
 
 class CategoryPicker extends React.Component {
 
   render() {
+    console.log(this.props)
     return (
       <div className="category-picker">
         <button
@@ -18,4 +21,4 @@ class CategoryPicker extends React.Component {
   }
 }
 
-export default CategoryPicker
+export default withRouter(CategoryPicker)
